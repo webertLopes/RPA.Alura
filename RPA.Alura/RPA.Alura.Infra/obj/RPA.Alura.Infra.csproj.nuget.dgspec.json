@@ -109,6 +109,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "SQLitePCLRaw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.16.2, )"

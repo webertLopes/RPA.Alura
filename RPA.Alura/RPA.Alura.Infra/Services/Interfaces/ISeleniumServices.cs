@@ -1,9 +1,10 @@
-﻿namespace RPA.Alura.Infra.Services.Interfaces
+﻿using RPA.Alura.Domain.Entities;
+
+namespace RPA.Alura.Infra.Services.Interfaces
 {
     public interface ISeleniumServices
     {
-        void NavegarPara(string url);
-        string ObterConteudoDaPagina();
-        void Fechar();
+        IEnumerable<Course> Get(string searchTerm);
+        void Close();
     }
 }

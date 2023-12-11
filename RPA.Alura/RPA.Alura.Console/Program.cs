@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using RPA.Alura.Application.Services;
 using RPA.Alura.Domain.Repositories;
 using RPA.Alura.Domain.Services;
@@ -10,10 +11,12 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Configurar o serviço de DI
+        var sqliteConnectionString = "Data Source=courses.db;";
+
         var serviceProvider = new ServiceCollection()
+            .AddLogging(configure => configure.AddConsole())
             .AddSingleton<ISeleniumServices, SeleniumServices>()
-            .AddSingleton<ICourseRepository, CourseRepository>(provider => new CourseRepository("Data Source=:memory:;Mode=Memory;Cache=Shared"))
+            .AddSingleton<ICourseRepository, CourseRepository>(provider => new CourseRepository(sqliteConnectionString))
             .AddSingleton<ICourseServices, CourseServices>()
             .BuildServiceProvider();
 

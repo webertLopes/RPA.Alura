@@ -26,5 +26,19 @@ namespace RPA.Alura.Infra.Repositories
             var sql = "SELECT Id, Title, Instructor, Workload, Description  FROM Courses;";
             return await _dbConnection.QueryAsync<Course>(sql);
         }
+
+        public async Task Init()
+        {
+            var sql = @"
+            CREATE TABLE IF NOT EXISTS Courses (
+                Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                Title TEXT,
+                Instructor TEXT,
+                Workload INTEGER,
+                Description TEXT
+            );";
+
+            await _dbConnection.ExecuteAsync(sql);
+        }
     }
 }
