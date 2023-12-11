@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RPA.Alura.Domain\RPA.Alura.Domain.csproj" />
+    <ProjectReference Include="..\RPA.Alura.Infra\RPA.Alura.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
