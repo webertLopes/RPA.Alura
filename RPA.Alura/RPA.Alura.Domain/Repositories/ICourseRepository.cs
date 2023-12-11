@@ -6,5 +6,6 @@ namespace RPA.Alura.Domain.Repositories
     {
         Task<IEnumerable<Course>> GetCoursesAsync();
         Task AddAsync(Course course);
+        Task Init();
     }
 }
