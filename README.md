@@ -7,6 +7,7 @@ O "RPA Cursos Alura" é uma aplicação de RPA (Automação Robótica de Process
 - .NET 6
 - Dapper
 - Selenium WebDriver
+- SQLite (Banco de Dados)
 
 ## Pré-requisitos
 
@@ -37,6 +38,9 @@ Para iniciar a aplicação, navegue até a pasta do projeto e execute o comando:
 dotnet run
 
 Isso iniciará o processo de automação, onde a aplicação acessará o site da Alura e começará a coleta de dados dos cursos disponíveis.
+
+Para visualizar os dados coletados no SQLite, instale a extensão SQLite Viewer no Chrome e abra o arquivo de banco de dados localizado em:
+
 
 ## Executando os Testes
 
