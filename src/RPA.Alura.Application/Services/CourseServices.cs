@@ -21,7 +21,7 @@ namespace RPA.Alura.Application.Services
         {
             await _courseRepository.Init();
 
-            var courses = _seleniumServices.Get("RPA");
+            var courses = _seleniumServices.Get("Java");
 
             foreach (var course in courses)            
                 await _courseRepository.AddAsync(course);            
