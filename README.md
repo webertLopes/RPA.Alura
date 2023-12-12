@@ -39,7 +39,7 @@ dotnet run
 
 Isso iniciará o processo de automação, onde a aplicação acessará o site da Alura e começará a coleta de dados dos cursos disponíveis.
 
-Para visualizar os dados coletados no SQLite, instale a extensão SQLite Viewer no Chrome e abra o arquivo de banco de dados localizado em:
+Para visualizar os dados coletados no SQLite, instale a extensão SQLite Viewer no Chrome e abra o arquivo de banco de dados localizado em: src\RPA.Alura.Console\bin\Debug\net6.0\courses 
 
 
 ## Executando os Testes
